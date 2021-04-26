@@ -1,30 +1,45 @@
-var images 
-[
-     "Grandfather.jpg",
-     "Grandmother.jpg",
-     "Uncle.jpg",
-     "Father.jpg",
-     "Aunty.jpg",
-     "Sunita.jpg",
-     "Sister.jpg",
-     "Daughter.jpg",
-     "Small Brother",
-     "Big Brother",
-     
-];
-  var names 
-  [
-       "Rajendra Prasad Sharma", "Gayatri Devi", "Vishnu Kumar Sharma", "Arun Kumar Sharma", "Gunjan Sharma",
-       "Sunita Sharma", "Aarika Sharma", "Yoshi Sharma", "Akshat Sharma", "Aryan Sharma" 
-  ];
+var members = [
+    "0.jpg", 
+    "1.jpg", 
+    "2.jpg", 
+    "3.jpg", 
+    "4.jpg", 
+    "5.jpg",
+    "6.jpg",
+    "7.jpg",
+    "8.jpg",
+    "9.jpg",
+    "10.jpg"
+    ];
 
-  function nextslide() {
-       if(i == 10)
-       {
-            i = 0;
-       }
-  }
+    var names = [
+    "My Family-Book", 
+    "Rajendra Prasad Sharma", 
+    "Gayatri Devi", 
+    "Vishnu Sharma", 
+    "Arun Sharma", 
+    "Gunjan Sharma",
+    "Sunita Sharma",
+    "Aarika Sharma",
+    "Akshat Sharma",
+    "Aryan Sharma",
+    "Yoshi Sharma"
+    ];
 
-  document.getElementById("album").src = names[i];
+    var count = 0;
 
-  i++;
+    function nextslide () {
+
+    document.getElementById("members").src = members[count];
+
+    document.getElementById("names").innerHTML = names[count];
+    
+    count++;
+
+    if (count == 10) {
+    
+    count = 0;
+
+    }
+
+    }
