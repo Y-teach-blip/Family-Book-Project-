@@ -1,5 +1,4 @@
 var members = [
-    "0.jpg", 
     "1.jpg", 
     "2.jpg", 
     "3.jpg", 
@@ -13,7 +12,6 @@ var members = [
     ];
 
     var names = [
-    "My Family-Book", 
     "Rajendra Prasad Sharma", 
     "Gayatri Devi", 
     "Vishnu Sharma", 
@@ -26,19 +24,19 @@ var members = [
     "Yoshi Sharma"
     ];
 
-    var count = 0;
+    var i = 0;
 
-    function nextslide () {
+    function nextslide() {
 
-    document.getElementById("members").src = members[count];
+    document.getElementById("members").src = members[i];
 
-    document.getElementById("names").innerHTML = names[count];
+    document.getElementById("names").innerHTML = names[i];
     
-    count++;
+    i++;
 
-    if (count == 10) {
+    if (i == 9) {
     
-    count = 0;
+    i = 0;
 
     }
 
